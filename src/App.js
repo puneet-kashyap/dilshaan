@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+import Header from './Components/Header/header'
+// import Carousel from './Components/Utils/carousel'
+import './App.css';
+
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+          <Header/>
+          {/* <Carousel /> */}
+      </div>
+    );
+  }
+}
+
+export default App;
