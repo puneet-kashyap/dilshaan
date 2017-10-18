@@ -32,7 +32,9 @@ class Header extends React.Component {
     <div >
       <AppBar position="static">
         <Toolbar>
-          <img src={require('../../Images/logo1.png')} className="img-responsive" style={{'padding':'10px'}} alt="Andy Nagpal Realtor" />
+          <a href="/">
+            <img src={require('../../Images/logo1.png')} className="img-responsive" style={{'padding':'10px'}} alt="Andy Nagpal Realtor" />
+          </a>
           <Typography type="title" color="inherit" style={style} >
             {/* Dilshaan */}
           </Typography>
@@ -53,8 +55,6 @@ class Header extends React.Component {
           Dilshaan <br/>
           416-xxx-xxxx
         </Hidden>
-
-
           <Menu
             id="simple-menu"
             anchorEl={this.state.anchorEl}
@@ -67,12 +67,12 @@ class Header extends React.Component {
         </Menu>
         </Toolbar>
           <Tabs centered scrollable value={value} onChange={this.handleChange}>
-              <Tab label="Home" />
-              <Tab label="Shows" />
-              <Tab label="Albums" />
-              <Tab label="Schedules" />
-              <Tab label="Bookings" />
-              <Tab label="Contact Me" href="#basic-tabs" />
+              <Tab label="Home" href="/" />
+              <Tab label="Shows" href="/Shows" />
+              <Tab label="Albums" href="/Albums" />
+              <Tab label="Schedules" href="/Schedules" />
+              <Tab label="Bookings" href="/Bookings" />
+              <Tab label="Contact Me" href="/Contact"/>
           </Tabs>
       </AppBar>
     </div>

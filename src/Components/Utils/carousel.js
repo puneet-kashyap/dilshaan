@@ -7,26 +7,16 @@ const Carousel = () => {
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
             </ol>
             <div className="carousel-inner">
                 <div className="item active">
-                    <img src={require('../Images/home/Radha_Soami_Canada_Meditate.jpg')} className="img-responsive" alt="Toronto"/>
-                </div>
-
-                <div className="item">
-                    <img src={require('../Images/home/Radha_Soami_Canada_Mountain1.jpg')} className="img-responsive" alt="Brampton"/>
-                </div>
-
-                <div className="item">
-                    <img src={require('../Images/home/Radha_Soami_Canada_Mountain3.jpg')} className="img-responsive"alt="Mississauga"/>
+                    <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
                 <div className="item">
-                    <img src={require('../Images/home/Radha_Soami_Canada_Niagara.jpg')} className="img-responsive"alt="Mississauga"/>
+                  <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
                 <div className="item">
-                    <img src={require('../Images/home/Radha_Soami_Canada_NortherLights.jpg')} className="img-responsive"alt="Mississauga"/>
+                  <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">

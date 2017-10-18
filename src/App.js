@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Components/Header/header'
-// import Carousel from './Components/Utils/carousel'
+import Header from './Components/Header/header';
+import Footer from './Components/Footer/footer';
+import Carousel from './Components/Utils/carousel';
 import './App.css';
 
 
@@ -9,7 +10,8 @@ class App extends Component {
     return (
       <div className="App">
           <Header/>
-          {/* <Carousel /> */}
+          <Carousel />
+          <Footer />
       </div>
     );
   }
