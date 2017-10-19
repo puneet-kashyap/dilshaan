@@ -8,7 +8,7 @@ const Carousel = () => {
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-            <div className="carousel-inner">
+            <div className="carousel-inner" style={{'width':'100%'}}>
                 <div className="item active">
                     <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
