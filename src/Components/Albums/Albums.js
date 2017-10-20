@@ -2,43 +2,33 @@ import React from 'react';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import Youtube from '../Utils/youtube';
-import Card, { CardHeader, CardContent, CardMedia } from 'material-ui/Card';
+import Card, { CardActions, CardHeader, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
+import Button from 'material-ui/Button';
 
 const Albums = () => {
   return (
     <div>
       <Header />
-      <h1>Dilshaan's Music Album </h1>
-        <div className="col-md-6 text-center" style={{'padding':'25px'}}>
+        <div className="row col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
             <Card raised>
+              <Typography type="display" component="h1" color="primary" style={{'padding':'25px'}}>
+                Dilshaan's Pyaar
+              </Typography>
               <CardHeader
-                title="Dilshaan's Pyaar"
-                subheader="Listen on Spotify."
+                // title="Dilshaan's Pyaar"
+                subheader="Listen it on Spotify."
               />
               <CardMedia
-                style={{'padding':'10px'}}
+                style={{'padding':'10px','maxHeight':'100px'}}
                 component='iframe'
                 src="https://open.spotify.com/embed?uri=spotify:album:1IAafOcdJSwY0wd59QaW77&view=coverart"
                 frameBorder="0"
                 allowTransparency="true"
               />
-              {/* <Youtube src="https://www.youtube.com/embed/HGATo0DYtJ4"/> */}
-              <CardContent>
-                <Typography type="title" component="h1">
-                  Youth Anthem
-                </Typography>
-                <Typography component="p">
-                  Record breaking album with the beautiful voice of Dilshaan.
-                </Typography>
-              </CardContent>
-            </Card>
-        </div>
-        <div className="col-md-6 text-center" style={{'padding':'25px'}}>
-            <Card raised>
               <CardHeader
-                title="Dilshaan's Pyaar"
-                subheader="Listen on Spotify."
+                // title="Dilshaan's Pyaar"
+                subheader="Watch full HD video of 'Pyaar'."
               />
               <Youtube src="https://www.youtube.com/embed/HGATo0DYtJ4"/>
               <CardContent>
@@ -49,6 +39,18 @@ const Albums = () => {
                   Record breaking album with the beautiful voice of Dilshaan.
                 </Typography>
               </CardContent>
+              <CardActions>
+                <Button dense
+                  color="primary"
+                  href="https://www.youtube.com/watch?v=HGATo0DYtJ4&feature=youtu.be">
+                  Share
+                </Button>
+                <Button dense
+                  color="primary"
+                  href="https://rw.igeet.me/320-792509s/Pyar.mp3">
+                  Download
+                </Button>
+              </CardActions>
             </Card>
         </div>
       <Footer />

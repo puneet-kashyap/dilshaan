@@ -1,45 +1,52 @@
 import React from 'react';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
+import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
+import Phone from 'material-ui-icons/Phone';
+import Email from 'material-ui-icons/Email';
+import IconButton from 'material-ui/IconButton';
 
 const Contact = () => {
   return (
     <div>
       <Header />
-      <div className="row">
-          <div className="col-md-4 text-center" style={{'padding':'25px'}}>
-            <Card raised style={{'maxWidth':'300px', 'padding': '10px'}}>
-              <CardMedia
-                component='iframe'
-                src="https://open.spotify.com/embed?uri=spotify:album:1IAafOcdJSwY0wd59QaW77&view=coverart"
-                frameBorder="0"
-                allowTransparency="true"
-                className="embed-responsive-item"
-              />
-              <CardContent>
-              <Typography type="title" component="h2">
-                Dilshaan's Pyar
-              </Typography>
-              <Typography component="p">
-                Listen your favorite singer on spotify.
+      <div className="col-md-6 text-center" style={{'padding':'25px'}}>
+          <Card raised className="img-responsive">
+            <CardHeader
+              title="Dil Shaan"
+              subheader="Artist, Musician, and Performer."
+              color="primary"
+            />
+            <img src={require('../../Images/profile/profile1.jpg')}
+              className="img-responsive center-block"
+              alt="Dil Shaan"/>
+            <CardContent>
+              <Typography type="title" component="h1">
+                  <p><span>
+                      <br/>Punjabi Bagh
+                      <br/>Kapurthala
+                      <br/>Ph.# 647-xxx-xxxx
+                      <br/>Email:
+                      <a href={`mailto:info@dilshaan.com?Subject=Dil%20Shaan`} target="_top">info@dilshaan.com</a>
+                      <br/>
+                      </span>
+                  </p>
               </Typography>
             </CardContent>
-            <CardActions>
-              <Button dense color="primary">
-                Share
-              </Button>
-              <Button dense color="primary">
-                Learn More
-              </Button>
-            </CardActions>
-            </Card>
-          </div>
-
+          </Card>
       </div>
-
+      <Card raised>
+        <CardMedia
+          style={{'padding':'10px','minHeight':'500px'}}
+          component='iframe'
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38541.238578956705!2d75.37513554427363!3d31.37014996739419!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a4854dcaaea2b%3A0x613bdd0931c8e3c9!2sKapurthala%2C+Punjab%2C+India!5e0!3m2!1sen!2sca!4v1508520507989"
+          title="Dilshaan Map"
+          className="embed-responsive-item"
+          frameBorder="0"
+          allowFullScreen
+        />
+      </Card>
       <Footer />
     </div>
   );

@@ -3,8 +3,6 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
-import IconButton from 'material-ui/IconButton';
-import MenuIcon from 'material-ui-icons/Menu';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Hidden from 'material-ui/Hidden';
@@ -45,9 +43,9 @@ class Header extends React.Component {
               color='contrast'
               onClick={this.handleClick}
             >
-            <IconButton color='contrast'>
+            {/* <IconButton color='contrast'>
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
             Menu
           </Button>
         </Hidden>
@@ -68,9 +66,9 @@ class Header extends React.Component {
         </Toolbar>
           <Tabs centered scrollable value={value} onChange={this.handleChange}>
               <Tab label="Home" href="/" />
-              <Tab label="Shows" href="/Shows" />
+              {/* <Tab label="Shows" href="/Shows" /> */}
               <Tab label="Albums" href="/Albums" />
-              <Tab label="Schedules" href="/Schedules" />
+              {/* <Tab label="Schedules" href="/Schedules" /> */}
               <Tab label="Bookings" href="/Bookings" />
               <Tab label="Contact Me" href="/Contact"/>
           </Tabs>
