@@ -3,14 +3,22 @@ import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import Typography from 'material-ui/Typography';
 import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
-import Phone from 'material-ui-icons/Phone';
-import Email from 'material-ui-icons/Email';
-import IconButton from 'material-ui/IconButton';
 
 const Contact = () => {
   return (
     <div>
       <Header />
+      <section id="contact" className="success">
+          <div className="container">
+              <div className="row">
+                  <div className="col-lg-12 text-center">
+                    <Typography type="display" component="h1" color="primary" style={{'paddingTop':'25px'}}>
+                      Contact Me
+                    </Typography>
+                  </div>
+              </div>
+          </div>
+      </section>
       <div className="col-md-6 text-center" style={{'padding':'25px'}}>
           <Card raised className="img-responsive">
             <CardHeader

@@ -6,6 +6,10 @@ import Button from 'material-ui/Button';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Hidden from 'material-ui/Hidden';
+import Contacts from 'material-ui-icons/Contacts';
+import Home from 'material-ui-icons/Home';
+import Album from 'material-ui-icons/Album';
+import Slideshow from 'material-ui-icons/Slideshow';
 
 const style = {
   flex: 1,
@@ -25,7 +29,6 @@ class Header extends React.Component {
     this.setState({ open: false });
   };
   render() {
-    const { value } = this.state;
   return (
     <div >
       <AppBar position="static">
@@ -43,13 +46,10 @@ class Header extends React.Component {
               color='contrast'
               onClick={this.handleClick}
             >
-            {/* <IconButton color='contrast'>
-              <MenuIcon />
-            </IconButton> */}
             Menu
-          </Button>
-        </Hidden>
-        <Hidden only="sm">
+            </Button>
+          </Hidden>
+        <Hidden only={['sm','md','lg']}>
           Dilshaan <br/>
           416-xxx-xxxx
         </Hidden>
@@ -64,13 +64,13 @@ class Header extends React.Component {
             <MenuItem onClick={this.handleRequestClose}>Contact Me</MenuItem>
         </Menu>
         </Toolbar>
-          <Tabs centered scrollable value={value} onChange={this.handleChange}>
-              <Tab label="Home" href="/" />
+          <Tabs centered /*scrollable*/>
+              <Tab icon={<Home />} label="Home" href="/" />
               {/* <Tab label="Shows" href="/Shows" /> */}
-              <Tab label="Albums" href="/Albums" />
+              <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
               {/* <Tab label="Schedules" href="/Schedules" /> */}
-              <Tab label="Bookings" href="/Bookings" />
-              <Tab label="Contact Me" href="/Contact"/>
+              <Tab icon={<Album />} label="Bookings" href="/Bookings" />
+              <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
           </Tabs>
       </AppBar>
     </div>
