@@ -1,14 +1,14 @@
-import React,  { Component } from 'react';
+import React from 'react';
 import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
+import { Field, reduxForm } from 'redux-form'
 
-
-export default class Inquiry extends Component {
-  render() {
+const Inquiry = (props) => {
+  const { handleSubmit } = props
     return (
         <div>
         <Header />
@@ -22,13 +22,14 @@ export default class Inquiry extends Component {
               <p className="text-left">
                 Please enter your information to book Dil Shaan's shows and performance.
               </p>
+              <form onSubmit={ handleSubmit }>
               <TextField
                 required
                 label="Your Name"
                 placeholder="First and Last Name"
                 margin="dense"
                 fullWidth={true}
-              /><br />
+              />
               <TextField
                 required
                 label="Phone No."
@@ -75,6 +76,7 @@ export default class Inquiry extends Component {
                 color="primary">
                 Submit
               </Button>
+            </form>
               </Paper>
           </div>
           </div>
@@ -82,5 +84,9 @@ export default class Inquiry extends Component {
         <Footer />
         </div>
     );
-  }
 }
+
+export default reduxForm({
+  form: 'inquiryForm',
+  // validate
+})(Inquiry);

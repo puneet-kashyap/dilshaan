@@ -1,7 +1,9 @@
 import React from 'react';
+import Grid from 'material-ui/Grid';
 
 const Carousel = () => {
     return (
+      <Grid item  xs={12}>
         <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="3000">
             <ol className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -28,6 +30,7 @@ const Carousel = () => {
                 <span className="sr-only">Next</span>
             </a>
         </div>
+        </Grid>
     );
 }
 export default Carousel;

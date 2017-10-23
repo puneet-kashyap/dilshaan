@@ -16,7 +16,6 @@ const Albums = () => {
                 Dilshaan's Pyaar
               </Typography>
               <CardHeader
-                // title="Dilshaan's Pyaar"
                 subheader="Listen it on Spotify."
               />
               <CardMedia
@@ -27,7 +26,6 @@ const Albums = () => {
                 allowTransparency="true"
               />
               <CardHeader
-                // title="Dilshaan's Pyaar"
                 subheader="Watch full HD video of 'Pyaar'."
               />
               <Youtube src="https://www.youtube.com/embed/HGATo0DYtJ4"/>
