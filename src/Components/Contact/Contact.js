@@ -22,13 +22,13 @@ const Contact = () => {
               className="img-responsive center-block"
               alt="Dil Shaan"/>
             <CardContent>
-              <Typography type="display1" component="h4" color="primary">
-                      <br/>Punjabi Bagh
-                      <br/>Kapurthala
-                      <br/><b>Ph.# </b> +91-XXX-XXX-XXXX
-                      <br/><b>Email: </b>
-                      <a href={`mailto:info@dilshaan.com?Subject=Dil%20Shaan`} target="_top">info@dilshaan.com</a>
-                      <br/>
+              <Typography type="display1" component="h4" color="secondary">
+                  Punjabi Bagh,
+                  <br/>Kapurthala
+                  <br/><b>Ph.# </b> +91-XXX-XXX-XXXX
+                  <br/><b>Email: </b>
+                  <a href={`mailto:info@dilshaan.com?Subject=Dil%20Shaan`} target="_top">info@dilshaan.com</a>
+                  <br/>
               </Typography>
             </CardContent>
           </Card>
