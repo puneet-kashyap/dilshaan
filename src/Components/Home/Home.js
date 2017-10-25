@@ -14,7 +14,7 @@ const Home = () => {
         <Typography paragraph type="headline" style={{'padding':'0px 20px'}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id auctor felis. Donec tincidunt nibh enim, tempor vehicula turpis hendrerit eu. Aliquam auctor fringilla augue quis accumsan. Suspendisse nulla risus, consectetur sit amet sem vitae, sagittis imperdiet risus. Maecenas gravida dolor nec nisi iaculis, at malesuada nisi pharetra. Duis vitae cursus orci, sed gravida lectus. Vestibulum in orci tempor, bibendum diam eu, eleifend lectus. Morbi sit amet ipsum et nisl pharetra semper cursus ultrices metus.
         </Typography>
-        <Typography paragraph type="headline" component='p' style={{'padding':'0px 20px'}}>
+        <Typography paragraph type="headline" component='p' style={{'padding':'0px 20px 50px 20px'}}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id auctor felis. Donec tincidunt nibh enim, tempor vehicula turpis hendrerit eu. Aliquam auctor fringilla augue quis accumsan. Suspendisse nulla risus, consectetur sit amet sem vitae, sagittis imperdiet risus. Maecenas gravida dolor nec nisi iaculis, at malesuada nisi pharetra. Duis vitae cursus orci, sed gravida lectus. Vestibulum in orci tempor, bibendum diam eu, eleifend lectus. Morbi sit amet ipsum et nisl pharetra semper cursus ultrices metus.
         </Typography>
       </Paper>

@@ -23,7 +23,7 @@ const Footer = () => {
               <Typography align='center' type="headline" color="inherit">
                 Ramesh Sippi <br/>
                 Ph.# +91-416-XXX-XXXX <br/>
-                Email: dil@dilshaan.com
+                Email: sippi@dilshaan.com
               </Typography>
             </Grid>
             </Hidden>

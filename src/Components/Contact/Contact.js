@@ -8,38 +8,27 @@ const Contact = () => {
   return (
     <div>
       <Header />
-      <section id="contact" className="success">
-          <div className="container">
-              <div className="row">
-                  <div className="col-lg-12 text-center">
-                    <Typography type="display" component="h1" color="primary" style={{'paddingTop':'25px'}}>
-                      Contact Me
-                    </Typography>
-                  </div>
-              </div>
-          </div>
-      </section>
-      <div className="col-md-6 text-center" style={{'padding':'25px'}}>
+      <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
           <Card raised className="img-responsive">
+            <Typography type="display" component="h1" color="primary" style={{'paddingTop':'25px'}}>
+              Dil Shaan
+            </Typography>
             <CardHeader
-              title="Dil Shaan"
-              subheader="Artist, Musician, and Performer."
+              title="Artist, Musician, and Performer."
               color="primary"
+              style={{'paddingTop':'5px'}}
             />
             <img src={require('../../Images/profile/profile1.jpg')}
               className="img-responsive center-block"
               alt="Dil Shaan"/>
             <CardContent>
-              <Typography type="title" component="h1">
-                  <p><span>
+              <Typography type="display1" component="h4" color="primary">
                       <br/>Punjabi Bagh
                       <br/>Kapurthala
-                      <br/>Ph.# 647-xxx-xxxx
-                      <br/>Email:
+                      <br/><b>Ph.# </b> +91-XXX-XXX-XXXX
+                      <br/><b>Email: </b>
                       <a href={`mailto:info@dilshaan.com?Subject=Dil%20Shaan`} target="_top">info@dilshaan.com</a>
                       <br/>
-                      </span>
-                  </p>
               </Typography>
             </CardContent>
           </Card>
