@@ -2,7 +2,6 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
-import Button from 'material-ui/Button';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Hidden from 'material-ui/Hidden';
@@ -40,29 +39,16 @@ class Header extends React.Component {
             <Hidden smDown>
               <Tabs centered>
                   <Tab icon={<Home />} label="Home" href="/" />
-                  {/* <Tab label="Shows" href="/Shows" /> */}
                   <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
-                  {/* <Tab label="Schedules" href="/Schedules" /> */}
                   <Tab icon={<Album />} label="Bookings" href="/Bookings" />
                   <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
               </Tabs>
             </Hidden>
           </Typography>
-
-          {/* <Hidden smDown>
-            <Button
-              aria-owns={this.state.open ? 'simple-menu' : null}
-              aria-haspopup="true"
-              color='contrast'
-              onClick={this.handleClick}
-            >
-            Menu
-            </Button>
-          </Hidden> */}
-        <Hidden>
+        <Typography type="headline" align="center" color="inherit" >
           Dilshaan <br/>
           +91 - 76965-71231
-        </Hidden>
+        </Typography>
           <Menu
             id="simple-menu"
             anchorEl={this.state.anchorEl}
@@ -77,9 +63,7 @@ class Header extends React.Component {
         <Hidden mdUp>
           <Tabs centered>
               <Tab icon={<Home />} label="Home" href="/" />
-              {/* <Tab label="Shows" href="/Shows" /> */}
               <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
-              {/* <Tab label="Schedules" href="/Schedules" /> */}
               <Tab icon={<Album />} label="Bookings" href="/Bookings" />
               <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
           </Tabs>

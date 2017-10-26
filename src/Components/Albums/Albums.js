@@ -5,6 +5,7 @@ import Youtube from '../Utils/youtube';
 import Card, { CardActions, CardHeader, CardContent, CardMedia } from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
+import AudioPlayer from '../Utils/audio'
 
 const Albums = () => {
   return (
@@ -12,7 +13,7 @@ const Albums = () => {
       <Header />
         <div className="row col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
             <Card raised>
-              <Typography type="display" component="h1" color="primary" style={{'padding':'25px'}}>
+              <Typography type="display3" component="h1" color="primary" style={{'padding':'25px'}}>
                 Dilshaan's Pyaar
               </Typography>
               <CardHeader
@@ -25,6 +26,10 @@ const Albums = () => {
                 frameBorder="0"
                 allowTransparency="true"
               />
+              <CardHeader
+                subheader="Listen it Online."
+              />
+              <AudioPlayer src={require('../../Audios/Pyar.mp3')}/>
               <CardHeader
                 subheader="Watch full HD video of 'Pyaar'."
               />

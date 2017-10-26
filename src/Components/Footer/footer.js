@@ -41,7 +41,7 @@ const Footer = () => {
                 Ramesh K. Sippy
               </Typography>
               <Typography align='center' type="headline"  color="inherit" style={{ color: 'bisque'}}>
-                  +91-98145-81786
+                  +91 - 98145-81786
               </Typography>
               <Typography align='center' type="headline"  color="inherit" >
                   <a href={`mailto:music@dilshaan.com?Subject=Ramesh%20Sippy`}

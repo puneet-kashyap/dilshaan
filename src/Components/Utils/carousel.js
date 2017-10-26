@@ -3,7 +3,9 @@ import Grid from 'material-ui/Grid';
 
 const Carousel = () => {
     return (
-      <Grid item  xs={12}>
+      <Grid container>
+        <Grid item xs={12}>
+        <div className="row col-md-offset-1 col-md-10" >
         <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="3000">
             <ol className="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -15,10 +17,10 @@ const Carousel = () => {
                     <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
                 <div className="item">
-                  <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
+                  <img src={require('../../Images/slider/Dilshaan1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
                 <div className="item">
-                  <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
+                  <img src={require('../../Images/slider/Dilshaan2.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -30,7 +32,9 @@ const Carousel = () => {
                 <span className="sr-only">Next</span>
             </a>
         </div>
-        </Grid>
+      </div>
+    </Grid>
+    </Grid>
     );
 }
 export default Carousel;
