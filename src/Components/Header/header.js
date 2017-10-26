@@ -37,9 +37,19 @@ class Header extends React.Component {
             <img src={require('../../Images/logo1.png')} className="img-responsive" style={{'padding':'10px'}} alt="Andy Nagpal Realtor" />
           </a>
           <Typography type="title" color="inherit" style={style} >
-            {/* Dilshaan */}
+            <Hidden smDown>
+              <Tabs centered>
+                  <Tab icon={<Home />} label="Home" href="/" />
+                  {/* <Tab label="Shows" href="/Shows" /> */}
+                  <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
+                  {/* <Tab label="Schedules" href="/Schedules" /> */}
+                  <Tab icon={<Album />} label="Bookings" href="/Bookings" />
+                  <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
+              </Tabs>
+            </Hidden>
           </Typography>
-          <Hidden only="xs">
+
+          {/* <Hidden smDown>
             <Button
               aria-owns={this.state.open ? 'simple-menu' : null}
               aria-haspopup="true"
@@ -48,10 +58,10 @@ class Header extends React.Component {
             >
             Menu
             </Button>
-          </Hidden>
-        <Hidden only={['sm','md','lg']}>
+          </Hidden> */}
+        <Hidden>
           Dilshaan <br/>
-          416-xxx-xxxx
+          +91 - 76965-71231
         </Hidden>
           <Menu
             id="simple-menu"
@@ -64,7 +74,8 @@ class Header extends React.Component {
             <MenuItem onClick={this.handleRequestClose}>Contact Me</MenuItem>
         </Menu>
         </Toolbar>
-          <Tabs centered /*scrollable*/>
+        <Hidden mdUp>
+          <Tabs centered>
               <Tab icon={<Home />} label="Home" href="/" />
               {/* <Tab label="Shows" href="/Shows" /> */}
               <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
@@ -72,6 +83,7 @@ class Header extends React.Component {
               <Tab icon={<Album />} label="Bookings" href="/Bookings" />
               <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
           </Tabs>
+        </Hidden>
       </AppBar>
     </div>
   )};

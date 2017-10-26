@@ -7,7 +7,7 @@ const InquiryThanks = () => {
   return (
     <div className="row col-md-offset-4 col-md-4" style={{'padding':'25px'}}>
       <Paper style={{'padding':'10px'}}>
-        <Typography type="display3" component="h1" color="primary" style={{'paddingBottom':'10px'}}>
+        <Typography type="display3"  align="center" component="h1" color="primary" style={{'paddingBottom':'15px'}}>
           Thank You.
         </Typography>
       <p className="text-left">

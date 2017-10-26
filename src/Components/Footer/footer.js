@@ -16,7 +16,7 @@ const Footer = () => {
                 Dil Shaan
               </Typography>
               <Typography align='center' type="headline"  color="inherit" style={{ color: 'bisque'}}>
-                  +91 - 416-111-XXXX
+                  +91 - 76965-71231
               </Typography>
               <Typography align='center' type="headline"  color="inherit" >
                   <a href={`mailto:music@dilshaan.com?Subject=Dil%20Shaan`}
@@ -38,15 +38,15 @@ const Footer = () => {
             </Hidden>
             <Grid item xs={12} sm={4}>
               <Typography align='center' type="display1"  color="inherit" style={{ 'padding': '8px' }}>
-                Ramesh Sippi
+                Ramesh K. Sippy
               </Typography>
               <Typography align='center' type="headline"  color="inherit" style={{ color: 'bisque'}}>
-                  +91 - 416-111-XXXX
+                  +91-98145-81786
               </Typography>
               <Typography align='center' type="headline"  color="inherit" >
-                  <a href={`mailto:music@dilshaan.com?Subject=Ramesh%20Sippi`}
+                  <a href={`mailto:music@dilshaan.com?Subject=Ramesh%20Sippy`}
                     style={{ color: 'bisque'}} target="_top">
-                    sippi@dilshaan.com
+                    sippy@dilshaan.com
                   </a>
               </Typography>
             </Grid>

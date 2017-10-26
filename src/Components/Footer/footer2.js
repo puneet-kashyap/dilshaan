@@ -37,9 +37,9 @@ const Footer = () => {
                             <div className="fb-like" data-href="https://www.facebook.com/TeamAndyNagpal/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
                         </div>
                         <div className="footer-col col-md-4">
-                            <h3>Ramesh Sippi</h3>
-                            <p><span>Ph.# +91-647-xxx-xxx<br/>
-                                <a href={`mailto:sippi@dilshaan.com?Subject=Varun%20Paaji`} target="_top"> sippi@dilshaan.com</a></span>
+                            <h3>Ramesh K. Sippy</h3>
+                            <p><span>Ph.# +91-98145-81786<br/>
+                                <a href={`mailto:sippy@dilshaan.com?Subject=Varun%20Paaji`} target="_top"> sippy@dilshaan.com</a></span>
                                 <span className='hidden-xs'>
                                 <br/>Punjabi Bagh
                                 <br/>Kapurthala<br/>
