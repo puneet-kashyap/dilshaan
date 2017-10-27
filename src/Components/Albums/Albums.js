@@ -49,8 +49,10 @@ const Albums = () => {
                   Share
                 </Button>
                 <Button dense
+                  download="Dilshaan's_Pyar"
+                  id="downloadButton"
                   color="primary"
-                  href="https://rw.igeet.me/320-792509s/Pyar.mp3">
+                  href={require('../../Audios/Pyar.mp3')}>
                   Download
                 </Button>
               </CardActions>
