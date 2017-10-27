@@ -60,7 +60,7 @@ class AudioPlayer extends Component {
         <CardMedia
           style={{width: 150,height: 150,}}
           image="http://cdn.za.vc/covers/71327.jpg"
-          title="Live from space album cover"
+          title="DilShaan's Pyar"
         />
       </Card>
     </div>
