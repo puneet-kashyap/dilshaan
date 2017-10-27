@@ -2,13 +2,17 @@ import React from 'react';
 import Typography from 'material-ui/Typography';
 import Youtube from '../Utils/youtube';
 import Carousel from '../Utils/carousel';
-
-
+import Hidden from 'material-ui/Hidden';
 
 const Home = () => {
   return(
     <div>
-      <Carousel />
+      <Hidden smUp>
+        <Carousel sliderImages='small'/>
+      </Hidden>
+      <Hidden only="xs">
+        <Carousel sliderImages='big'/>
+      </Hidden>
         <Typography type="display3" component="h1" color="primary" align="center" style={{'padding':'25px'}}>
           Dil Shaan
         </Typography>

@@ -18,7 +18,7 @@ const Contact = () => {
               color="primary"
               style={{'paddingTop':'5px'}}
             />
-            <img src={require('../../Images/profile/profile1.jpg')}
+            <img src={require('../../Images/profile/profile2.jpg')}
               className="img-responsive center-block"
               alt="Dil Shaan"/>
             <CardContent>
