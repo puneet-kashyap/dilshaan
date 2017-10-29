@@ -3,7 +3,6 @@ import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import PyarAlbum from './PyarAlbum';
 import Card, {CardHeader} from 'material-ui/Card';
-import Hidden from 'material-ui/Hidden';
 import Typography from 'material-ui/Typography';
 import Video from '../Utils/video';
 
@@ -37,7 +36,7 @@ class Albums extends Component {
               Fans' Request
             </Typography>
             <CardHeader
-              subheader="Random request at Gym recorded by a fan."
+              subheader="Song request at Gym recorded by a fan."
             />
             <Video src={require('../../Videos/Dilshaan_Gym.mp4')} />
           </Card>
