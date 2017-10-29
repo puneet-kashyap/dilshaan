@@ -35,7 +35,7 @@ class AudioPlayer extends Component {
         'display':'flex',
         'justifyContent':'space-between',
         'margin':'10px',
-        'padding':'10px',
+        'padding':'5px',
         'background':'ghostwhite'
       }}>
         <div >
