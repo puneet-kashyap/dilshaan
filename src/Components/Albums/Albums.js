@@ -36,7 +36,7 @@ class Albums extends Component {
               Fans' Request
             </Typography>
             <CardHeader
-              subheader="Random request at Gym recorded by a fan."
+              subheader="Song request at Gym recorded by a fan."
             />
             <Video src={require('../../Videos/Dilshaan_Gym.mp4')} />
           </Card>
