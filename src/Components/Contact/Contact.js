@@ -3,15 +3,16 @@ import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import Typography from 'material-ui/Typography';
 import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
+import { connect } from 'react-redux';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div>
       <Header />
       <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
           <Card raised className="img-responsive">
-            <Typography type="display" component="h1" color="primary" style={{'paddingTop':'25px'}}>
-              Dil Shaan
+            <Typography type="display3" component="h1" color="primary" style={{'paddingTop':'25px'}}>
+              {props.owner.owner1.name}
             </Typography>
             <CardHeader
               title="Artist, Musician, and Performer."
@@ -23,11 +24,11 @@ const Contact = () => {
               alt="Dil Shaan"/>
             <CardContent>
               <Typography type="display1" component="h4" color="secondary">
-                  Punjabi Bagh,
-                  <br/>Kapurthala
-                  <br/><b>Ph.# </b> +91 - 76965-71231
+                  {props.owner.owner1.address1}
+                  <br/>{props.owner.owner1.address2}
+                  <br/><b>Ph.# </b> {props.owner.owner1.phone}
                   <br/><b>Email: </b>
-                  <a href={`mailto:info@dilshaan.com?Subject=Dil%20Shaan`} target="_top">info@dilshaan.com</a>
+                  <a href={`mailto:${props.owner.owner1.email}?Subject=Dil%20Shaan`} target="_top">{props.owner.owner1.email}</a>
                   <br/>
               </Typography>
             </CardContent>
@@ -49,4 +50,8 @@ const Contact = () => {
   );
 }
 
-export default Contact;
+const mapStateToProps = (state) => {
+   return {owner: state.users};
+}
+
+export default connect(mapStateToProps)(Contact);
