@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import PyarAlbum from './PyarAlbum';
@@ -6,8 +6,26 @@ import Card, {CardHeader} from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Video from '../Utils/video';
 
+import Paper from 'material-ui/Paper';
 
-const Albums = () => {
+class Albums extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      expanded:false
+    }
+  }
+
+  clickedIcon = () => {
+    if (this.state.expanded){
+      this.setState({expanded:false})
+    } else {
+      this.setState({expanded:true})
+    }
+
+  }
+
+  render() {
   return (
     <div>
       <Header />
@@ -26,6 +44,7 @@ const Albums = () => {
       <Footer />
     </div>
   );
+  }
 }
 
 export default Albums;
