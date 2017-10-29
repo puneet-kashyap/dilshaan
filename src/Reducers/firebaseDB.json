@@ -1,58 +1,18 @@
 {
-  "about" : {
-    "aboutUs" : {
-      "p1" : "Add Glamour Home Staging Ltd. is co-founded by Simar and Sonia, the professionally trained stagers from Seneca college. They are a dedicated, hard-working team  which is always there to help homeowners and Real Estate Sales Professionals to get homes  ready to be presented in the market or to live-in.",
-      "p2" : "Their creativity, passion, discipline and vision beyond excellence has given them the talent  to create the ambiance and showcase the property to deliver that compassionate first  impression by highlighting the focal points in homes.",
-      "p3" : "Add Glamour team works with a wide range of professionals such as painters, electricians,  plumbers to ensure that the projects run smoothly, quickly and par excellence. Add Glamour  owns most of its staging inventory, this distinct advantage allows them to offer competitive  yet reasonable pricing.",
-      "p4" : "Team Add Glamour is very professional in all their dealings. When it comes to decorating,  Simar and Sonia are the go to expert who work with passion to create and achieve the best  aura for your home. They have the talent and vision of making any house a home and  changing the ordinary to extraordinary. Both Simar and Sonia are members of RESA (Real  Estate Staging Professional Association) which is the largest Network of Professional stagers  dedicated to advancing professionalism and excellence in Real Estate Staging."
-    },
-    "doYouKnow" : {
-      "p1" : "In the highly competitive world of real estate, perfect  presentation is a must! The majority of buyers pre-view  potential properties to visit by looking at listing photos on-  line. Staging your property ensures that it is ready to be  photo-graphed for proper presentation Your home’s  location and value may catch the interest of prospective  buyers, but it is the photos and property’s overall look that  brings in the character and prompts the buyer to pick up  the phone and schedule an appointment for closer look.  Effectively market your property by hiring Add Glamour  home staging!. We deliver high impact results on budget  and on time, every time .Our principles and techniques,  will highlight your home’s appeal and distinctive features  in order to appeal to the majority of buyers.. join us today  and make your home a standout in the local real estate  competition!"
-    }
-  },
   "owners" : {
     "owner1" : {
-      "address1" : "7900 Hurontario St. UNIT 207",
-      "address2" : "Brampton, ON L6Y 0P7",
-      "email" : "sonia@addglamour.ca",
-      "name" : "Sonia Bhardwaj",
-      "phone" : "416-951-0581"
+      "address1" : "Kapurthala,",
+      "address2" : "Punjab",
+      "email" : "info@dilshaan.com",
+      "name" : "Dil Shaan",
+      "phone" : "+91 - 76965-71231"
     },
     "owner2" : {
-      "address1" : "7900 Hurontario St. UNIT 207",
-      "address2" : "Brampton, ON L6Y 0P7",
-      "email" : "simar@addglamour.ca",
-      "name" : "Simar Dhaliwal",
-      "phone" : "647-292-0009"
-    }
-  },
-  "prices" : {
-    "consultation" : {
-      "large" : "$150",
-      "medium" : "$100",
-      "small" : "$80"
-    },
-    "gold" : {
-      "large" : "$900 to $1200",
-      "medium" : "$700 to $900",
-      "small" : "$500 to $700"
-    }
-  },
-  "services" : {
-    "consultation" : {
-      "p1" : "A consultation would include a walk-through which we do as ‘potential buyers’. This helps us determine how to showcase your home’s best features. This would result in detailed recommendations following our Real Estate Profitability Specification Form. This form will be left with the client for further reference (either for further work required from The Add Glamour Co., or as a guide for the clients use)."
-    },
-    "gold" : {
-      "p1" : "This service is suitable for occupied homes where we work with most of your furniture and add staging accessories to give your home a completely new look to appeal the potential buyers.",
-      "p2" : "The consultation is included in this service with a report of pre-showcasing requirements. Optionally we also provide a customized staging to meet your budget."
-    },
-    "platinum" : {
-      "p1" : "This service is suitable for bigger vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling appealing to the potential buyers.",
-      "p2" : "The consultation is included in this service and our report will detail all the furniture and accessories that we will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging."
-    },
-    "silver" : {
-      "p1" : "This service is suitable for vacant homes where we will provide necessary rental furniture and accessories required to bring life to the home and give a homely feeling appealing to the potential buyers.",
-      "p2" : "The consultation is included in this service and our report will detail all the furniture and accessories that we will bring before showcasing. We provide the right amount of furniture to minimize cost without compromising the staging."
+      "address1" : "Kapurthala,",
+      "address2" : "Punjab",
+      "email" : "sippy@dilshaan.com",
+      "name" : "Ramesh K. Sippy",
+      "phone" : "+91 - 98145-81786"
     }
   }
 }

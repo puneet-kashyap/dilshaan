@@ -7,6 +7,7 @@ import Inquiry from './Components/Inquiry/Inquiry'
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import allReducers from './Reducers/index';
+import {initDB} from './Actions';
 
 import './index.css';
 import App from './App';
@@ -32,3 +33,5 @@ ReactDOM.render((
   </Provider>
   ), document.getElementById('root'));
 registerServiceWorker();
+
+initDB();
