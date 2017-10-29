@@ -6,8 +6,6 @@ import Card, {CardHeader} from 'material-ui/Card';
 import Typography from 'material-ui/Typography';
 import Video from '../Utils/video';
 
-import Paper from 'material-ui/Paper';
-
 class Albums extends Component {
   constructor(props){
     super(props);
