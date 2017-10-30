@@ -27,7 +27,7 @@ class Albums extends Component {
   return (
     <div>
       <Header />
-      <div className="col-md-4 text-center" style={{'padding':'15px'}}>
+      <div className="col-md-6 text-center" style={{'padding':'15px'}}>
         <PyarAlbum />
       </div>
       <div className="col-md-6 text-center" style={{'padding':'15px'}}>
