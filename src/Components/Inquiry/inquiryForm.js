@@ -3,31 +3,24 @@ import Paper from 'material-ui/Paper';
 import TextField from 'material-ui/TextField';
 import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
-import { Field, reduxForm } from 'redux-form'
-import InquiryThanks from './inquiryThanks'
 
-const renderField = ({ input, placeholder, label, meta: { touched, error }, ...custom }) => (
-  <TextField required
-    label={label}
-    placeholder={placeholder}
-    errorText={touched && error}
-    {...input}
-    {...custom}
-    margin="dense"
-    fullWidth={true}
-  />
-)
+import InquiryThanks from './inquiryThanks';
 
 class InquiryForm extends Component {
   constructor(props){
     super(props);
     this.state={
-      form:'blank'
+      form:'blank',
+      date:'2017-12-28',
+      time: '19:30'
     }
   }
+  handleChange = event => {
+    this.setState({ [event.target.name]: event.target.value });
+  }
   submit = () => {
-    console.log('Form Submitted');
     this.setState({form:'filled'})
+    console.log(this.state);
   }
   render () {
     if (this.state.form === 'blank') {
@@ -41,53 +34,63 @@ class InquiryForm extends Component {
             Please enter your information to book Dil Shaan's shows and performance.
           </p>
           <form onSubmit={this.submit}>
-            <Field name="Name"
-              placeholder="First and Last Name"
-              component={renderField}
+            <TextField required
+              name="Name"
               label="Your Name"
+              placeholder="First and Last Name"
+              margin="dense"
+              fullWidth={true}
+              onChange={this.handleChange}
             />
-            <Field name="Phone"
-              placeholder="e.g. +91-416-xxx-xxxx"
-              component={renderField}
+            <TextField required
+              name="Phone"
               label="Phone No."
+              placeholder="e.g. +91-416-xxx-xxxx"
+              margin="dense"
+              fullWidth={true}
+              onChange={this.handleChange}
             />
-            <Field name="Email"
-              placeholder="Your email address"
-              component={renderField}
+            <TextField required
+              name="Email"
               label="Email Address"
+              placeholder="Your email address"
+              margin="dense"
+              fullWidth={true}
+              onChange={this.handleChange}
             />
-          <Field name="Date"
-            id="date"
-            component={renderField}
-            label="Date"
-            type="date"
-            defaultValue="2017-11-24"
-            format={(v) => ((v === '') ?  null : v)}
-          />
-          <Field name="Time"
-            id="time"
-            component={renderField}
-            label="Time"
-            type="time"
-            defaultValue="19:30"
-            format={(v) => ((v === '') ?  null : v)}
-          />
-          <Field name="Comments"
-            required={false}
-            multiline
-            rows="4"
-            id="Comments"
-            component={renderField}
-            label="Comments"
-            format={(v) => ((v === '') ?  null : v)}
-            style={{'paddingBottom':'25px'}}
-          />
-          <Button raised
-            type="submit"
-            disabled={ this.submitting}
-            color="primary">
-            Submit
-          </Button>
+            <TextField required
+              name="date"
+              label="Date"
+              type="date"
+              defaultValue={this.state.date}
+              fullWidth={true}
+              onChange={this.handleChange}
+              style={{'margin':'8px 0px 4px 0px'}}
+            />
+            <TextField required
+              name="Time"
+              label="Time"
+              type="time"
+              defaultValue={this.state.time}
+              fullWidth={true}
+              onChange={this.handleChange}
+              style={{'margin':'8px 0px 4px 0px'}}
+            />
+            <TextField required
+              name="Comments"
+              multiline
+              label="Comments"
+              rows="4"
+              type="time"
+              onChange={this.handleChange}
+              fullWidth={true}
+              style={{'marginBottom':'25px'}}
+            />
+            <Button raised
+              type="submit"
+              color="primary">
+              Submit
+            </Button>
         </form>
         </Paper>
       </div>
@@ -98,10 +101,6 @@ class InquiryForm extends Component {
       )
     }
   }
-
 }
 
-export default reduxForm({
-  form: 'inquiryForm',
-  // validate
-})(InquiryForm);
+export default InquiryForm;

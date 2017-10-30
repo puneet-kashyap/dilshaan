@@ -17,7 +17,7 @@ const InquiryThanks = () => {
         I appreciate your interest in booking my show in your city.
       </p>
       <Typography type="display3" align='right' component="h1" color="primary"
-        style={{'padding':'10px', 'font-family':'Ruthie'}}>
+        style={{'padding':'10px', 'fontFamily':'Ruthie'}}>
         Dil Shaan.
       </Typography>
     </Paper>
