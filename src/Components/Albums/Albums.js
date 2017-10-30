@@ -27,18 +27,20 @@ class Albums extends Component {
   return (
     <div>
       <Header />
+      <div className="col-md-6 text-center" style={{'padding':'25px'}}>
         <PyarAlbum />
-        <div className="row col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
-          <Card raised className="text-center">
-            <Typography type="display3" component="h1" color="primary" style={{'paddingTop':'25px'}}>
-              Fans' Request
-            </Typography>
-            <CardHeader
-              subheader="Song request at Gym recorded by a fan."
-            />
-            <Video src={require('../../Videos/Dilshaan_Gym.mp4')} />
-          </Card>
-        </div>
+      </div>
+      <div className="col-md-6 text-center" style={{'padding':'25px'}}>
+        <Card raised className="text-center">
+          <Typography type="display3" component="h1" color="primary" style={{'paddingTop':'25px'}}>
+            Fans' Request
+          </Typography>
+          <CardHeader
+            subheader="Song request at Gym recorded by a fan."
+          />
+          <Video src={require('../../Videos/Dilshaan_Gym.mp4')} />
+        </Card>
+      </div>
       <Footer />
     </div>
   );
