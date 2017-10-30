@@ -15,13 +15,13 @@ const Contact = (props) => {
               {props.owner.owner1.name}
             </Typography>
             <CardHeader
-              title="Artist, Musician, and Performer."
+              title="Singer, Musician, and Performer."
               color="primary"
               style={{'paddingTop':'5px'}}
             />
             <img src={require('../../Images/profile/profile2.jpg')}
               className="img-responsive center-block"
-              alt="Dil Shaan"/>
+              alt={props.owner.owner1.name}/>
             <CardContent>
               <Typography type="display1" component="h4" color="secondary">
                   {props.owner.owner1.address1}

@@ -48,7 +48,7 @@ class PyarAlbum extends Component {
         <Typography paragraph>
           Record breaking album with the beautiful voice of Dilshaan.
         </Typography>
-        <Typography paragraph>
+        <Typography>
           <b>Song:</b>  Pyar<br/>
           <b>Album:</b>   Pyar<br/>
           <b>Artist:</b>  Dilshaan<br/>

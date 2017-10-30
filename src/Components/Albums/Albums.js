@@ -30,7 +30,7 @@ class Albums extends Component {
       <div className="col-md-6 text-center" style={{'padding':'15px'}}>
         <PyarAlbum />
       </div>
-      <div className="col-md-6 text-center" style={{'padding':'15px'}}>
+      <div className="col-md-offset-2 col-md-4 text-center" style={{'padding':'15px'}}>
         <Card raised className="text-center">
           <Typography type="display3" component="h1" color="primary" style={{'paddingTop':'25px'}}>
             Fans' Request

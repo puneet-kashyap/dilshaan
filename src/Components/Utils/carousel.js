@@ -21,7 +21,6 @@ const sliderMobile = [
   require('../../Images/slider/Dilshaan2.jpg')
 ]
 
-let container =[];
 const Carousel = (props) => {
   let slider = sliderMobile
   if (props.sliderImages === 'big') {
@@ -36,15 +35,11 @@ const Carousel = (props) => {
                 <div className="item active">
                     <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
                 </div>
-                  {(()=> {
-                    slider.forEach((item)=>{
-                      container.push(
-                        <div className="item">
-                          <img src={item} className="img-responsive" alt="Dilshaan"/>
-                        </div>)
-                    });
-                    return container;
-                  })()}
+                {slider.map(item =>
+                      <div key={item} className="item">
+                        <img src={item} className="img-responsive" alt="Dilshaan"/>
+                      </div>
+                )}
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span className="glyphicon glyphicon-chevron-left"></span>
