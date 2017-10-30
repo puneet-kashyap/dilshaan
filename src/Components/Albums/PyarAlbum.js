@@ -52,7 +52,7 @@ class PyarAlbum extends Component {
               <b>Album:</b>   Pyar<br/>
               <b>Artist:</b>  Dilshaan<br/>
               <b>Label:</b>   Brown Eyes Music<br/>
-              <b>Music/Composed By:</b>   Jassi Nehaluwal<br/>
+              <b>Music/Composed By:</b>   Jassi Nihaluwal<br/>
               <b>Lyrics By:</b>   Ramesh K. Sippy, Honey Sampla
             </Typography>
           </CardContent>
