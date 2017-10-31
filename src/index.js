@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
-import Contact from './Components/Contact/Contact';
-import Albums from './Components/Albums/Albums'
-import Inquiry from './Components/Inquiry/Inquiry'
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
 import allReducers from './Reducers/index';
+
+import App from './App';
 import {initDB} from './Actions';
+import Contact from './Components/Contact/Contact';
+import Albums from './Components/Albums/Albums'
+import Inquiry from './Components/Inquiry/Inquiry'
+import Gallery from './Components/Gallery/Gallery'
 
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -27,6 +29,7 @@ ReactDOM.render((
         <Route exact path='/Albums' component={Albums}/>
         <Route exact path='/Bookings' component={Inquiry}/>
         <Route exact path='/Contact' component={Contact}/>
+        <Route exact path='/Gallery' component={Gallery}/>
         <Route path="*" render={() => (<Redirect to="/"/>)} />
       </Switch>
     </BrowserRouter>

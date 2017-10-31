@@ -5,10 +5,11 @@ import Typography from 'material-ui/Typography';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Hidden from 'material-ui/Hidden';
-import Contacts from 'material-ui-icons/Contacts';
+import PersonPinIcon from 'material-ui-icons/PersonPin';
 import Home from 'material-ui-icons/Home';
 import Album from 'material-ui-icons/Album';
 import Slideshow from 'material-ui-icons/Slideshow';
+import LibraryMusic from 'material-ui-icons/LibraryMusic';
 
 const style = {
   flex: 1,
@@ -27,6 +28,7 @@ class Header extends React.Component {
   handleRequestClose = () => {
     this.setState({ open: false });
   };
+
   render() {
   return (
     <div >
@@ -41,7 +43,8 @@ class Header extends React.Component {
                   <Tab icon={<Home />} label="Home" href="/" />
                   <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
                   <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-                  <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
+                  <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+                  <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
               </Tabs>
             </Hidden>
           </Typography>
@@ -60,12 +63,13 @@ class Header extends React.Component {
             <MenuItem onClick={this.handleRequestClose}>Contact Me</MenuItem>
         </Menu>
         </Toolbar>
-        <Hidden mdUp>
-          <Tabs centered>
+        <Hidden mdUp >
+          <Tabs scrollable fullWidth>
               <Tab icon={<Home />} label="Home" href="/" />
               <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
               <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-              <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
+              <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+              <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
           </Tabs>
         </Hidden>
       </AppBar>
