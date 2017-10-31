@@ -11,21 +11,21 @@ const sliderDesktop = [
 ]
 
 const sliderMobile = [
-  require('../../Images/slider/Dilshaan1.jpg'),
   require('../../Images/slider/Dilshaan6.jpg'),
   require('../../Images/slider/Dilshaan11.jpg'),
   require('../../Images/slider/Dilshaan12.jpg'),
   require('../../Images/slider/Dilshaan13.jpg'),
-  require('../../Images/slider/Dilshaan14.jpg'),
+  // require('../../Images/slider/Dilshaan14.jpg'),
   require('../../Images/slider/Dilshaan21.jpg'),
   require('../../Images/slider/Dilshaan2.jpg')
 ]
 
-let container =[];
 const Carousel = (props) => {
   let slider = sliderMobile
+  let firstPic = require('../../Images/slider/Dilshaan1.jpg')
   if (props.sliderImages === 'big') {
     slider = sliderDesktop
+    firstPic = require('../../Images/slider/pyar1.jpg')
   }
     return (
       <Grid container>
@@ -34,17 +34,13 @@ const Carousel = (props) => {
         <div id="myCarousel" className="carousel slide" data-ride="carousel" data-interval="3000">
             <div className="carousel-inner" style={{'width':'100%'}}>
                 <div className="item active">
-                    <img src={require('../../Images/slider/pyar1.jpg')} className="img-responsive" alt="Toronto"/>
+                    <img src={firstPic} className="img-responsive" alt="Dilshaan"/>
                 </div>
-                  {(()=> {
-                    slider.forEach((item)=>{
-                      container.push(
-                        <div className="item">
-                          <img src={item} className="img-responsive" alt="Dilshaan"/>
-                        </div>)
-                    });
-                    return container;
-                  })()}
+                {slider.map(item =>
+                      <div key={item} className="item">
+                        <img src={item} className="img-responsive" alt="Dilshaan"/>
+                      </div>
+                )}
             </div>
             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span className="glyphicon glyphicon-chevron-left"></span>

@@ -30,68 +30,68 @@ class InquiryForm extends Component {
             <Typography type="display3" component="h1" color="primary" style={{'paddingBottom':'10px'}}>
               Booking Inquiry
             </Typography>
-          <p className="text-left">
-            Please enter your information to book Dil Shaan's shows and performance.
-          </p>
-          <form onSubmit={this.submit}>
-            <TextField required
-              name="Name"
-              label="Your Name"
-              placeholder="First and Last Name"
-              margin="dense"
-              fullWidth={true}
-              onChange={this.handleChange}
-            />
-            <TextField required
-              name="Phone"
-              label="Phone No."
-              placeholder="e.g. +91-416-xxx-xxxx"
-              margin="dense"
-              fullWidth={true}
-              onChange={this.handleChange}
-            />
-            <TextField required
-              name="Email"
-              label="Email Address"
-              placeholder="Your email address"
-              margin="dense"
-              fullWidth={true}
-              onChange={this.handleChange}
-            />
-            <TextField required
-              name="date"
-              label="Date"
-              type="date"
-              defaultValue={this.state.date}
-              fullWidth={true}
-              onChange={this.handleChange}
-              style={{'margin':'8px 0px 4px 0px'}}
-            />
-            <TextField required
-              name="Time"
-              label="Time"
-              type="time"
-              defaultValue={this.state.time}
-              fullWidth={true}
-              onChange={this.handleChange}
-              style={{'margin':'8px 0px 4px 0px'}}
-            />
-            <TextField required
-              name="Comments"
-              multiline
-              label="Comments"
-              rows="4"
-              type="time"
-              onChange={this.handleChange}
-              fullWidth={true}
-              style={{'marginBottom':'25px'}}
-            />
-            <Button raised
-              type="submit"
-              color="primary">
-              Submit
-            </Button>
-        </form>
+            <p className="text-left">
+              Please enter your information to book Dilshaan's shows and performance.
+            </p>
+            <form onSubmit={this.submit}>
+                <TextField required
+                  name="Name"
+                  label="Your Name"
+                  placeholder="First and Last Name"
+                  margin="dense"
+                  fullWidth={true}
+                  onChange={this.handleChange}
+                />
+                <TextField required
+                  name="Phone"
+                  label="Phone No."
+                  placeholder="e.g. +91-416-xxx-xxxx"
+                  margin="dense"
+                  fullWidth={true}
+                  onChange={this.handleChange}
+                />
+                <TextField required
+                  name="Email"
+                  label="Email Address"
+                  placeholder="Your email address"
+                  margin="dense"
+                  fullWidth={true}
+                  onChange={this.handleChange}
+                />
+                <TextField required
+                  name="date"
+                  label="Date"
+                  type="date"
+                  defaultValue={this.state.date}
+                  fullWidth={true}
+                  onChange={this.handleChange}
+                  style={{'margin':'8px 0px 4px 0px'}}
+                />
+                <TextField required
+                  name="time"
+                  label="Time"
+                  type="time"
+                  defaultValue={this.state.time}
+                  fullWidth={true}
+                  onChange={this.handleChange}
+                  style={{'margin':'8px 0px 4px 0px'}}
+                />
+                <TextField required
+                  name="Comments"
+                  multiline
+                  label="Comments"
+                  rows="4"
+                  type="time"
+                  onChange={this.handleChange}
+                  fullWidth={true}
+                  style={{'marginBottom':'25px'}}
+                />
+                <Button raised
+                  type="submit"
+                  color="primary">
+                  Submit
+                </Button>
+          </form>
         </Paper>
       </div>
       );
