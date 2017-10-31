@@ -2,13 +2,15 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
-import Menu, { MenuItem } from 'material-ui/Menu';
 import Tabs, { Tab } from 'material-ui/Tabs';
 import Hidden from 'material-ui/Hidden';
-import Contacts from 'material-ui-icons/Contacts';
+import PersonPinIcon from 'material-ui-icons/PersonPin';
 import Home from 'material-ui-icons/Home';
 import Album from 'material-ui-icons/Album';
 import Slideshow from 'material-ui-icons/Slideshow';
+import LibraryMusic from 'material-ui-icons/LibraryMusic';
+
+import RightNavigation from './rightNavigation';
 
 const style = {
   flex: 1,
@@ -27,6 +29,7 @@ class Header extends React.Component {
   handleRequestClose = () => {
     this.setState({ open: false });
   };
+
   render() {
   return (
     <div >
@@ -41,31 +44,22 @@ class Header extends React.Component {
                   <Tab icon={<Home />} label="Home" href="/" />
                   <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
                   <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-                  <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
+                  <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+                  <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
               </Tabs>
             </Hidden>
           </Typography>
-        <Typography type="headline" align="center" color="inherit" >
-          Dilshaan <br/>
-          +91 - 76965-71231
-        </Typography>
-          <Menu
-            id="simple-menu"
-            anchorEl={this.state.anchorEl}
-            open={this.state.open}
-            onRequestClose={this.handleRequestClose}
-          >
-            <MenuItem onClick={this.handleRequestClose}>Home</MenuItem>
-            <MenuItem onClick={this.handleRequestClose}>Albums</MenuItem>
-            <MenuItem onClick={this.handleRequestClose}>Contact Me</MenuItem>
-        </Menu>
+          <Typography type="headline" align="center" color="inherit" style={{'display':'flex','alignItems':'inherit'}}>
+              <RightNavigation />
+          </Typography>
         </Toolbar>
-        <Hidden mdUp>
-          <Tabs centered>
+        <Hidden mdUp >
+          <Tabs scrollable fullWidth>
               <Tab icon={<Home />} label="Home" href="/" />
               <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
               <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-              <Tab icon={<Contacts />} label="Contact Me" href="/Contact"/>
+              <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+              <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
           </Tabs>
         </Hidden>
       </AppBar>
