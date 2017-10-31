@@ -29,7 +29,7 @@ class PyarAlbum extends Component {
   return (
     <Card raised>
       <Typography type="display3" component="h1" color="primary" style={{'padding':'25px'}}>
-        Dilshaan's Pyaar
+        Dilshaan's Pyar
       </Typography>
       <CardHeader
         style={{'padding':'0px'}}
@@ -60,7 +60,9 @@ class PyarAlbum extends Component {
       <CardActions style={{"justifyContent":"space-around"}}>
         <Button dense
           color="primary"
-          href="https://www.youtube.com/watch?v=HGATo0DYtJ4&feature=youtu.be">
+          href="https://www.youtube.com/watch?v=HGATo0DYtJ4&feature=youtu.be"
+          target="_blank"  
+        >
           Share
         </Button>
         <Button dense

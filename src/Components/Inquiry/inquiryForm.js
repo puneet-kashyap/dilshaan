@@ -31,7 +31,7 @@ class InquiryForm extends Component {
               Booking Inquiry
             </Typography>
             <p className="text-left">
-              Please enter your information to book Dil Shaan's shows and performance.
+              Please enter your information to book Dilshaan's shows and performance.
             </p>
             <form onSubmit={this.submit}>
                 <TextField required
@@ -68,7 +68,7 @@ class InquiryForm extends Component {
                   style={{'margin':'8px 0px 4px 0px'}}
                 />
                 <TextField required
-                  name="Time"
+                  name="time"
                   label="Time"
                   type="time"
                   defaultValue={this.state.time}

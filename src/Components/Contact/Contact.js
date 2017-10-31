@@ -28,7 +28,7 @@ const Contact = (props) => {
                   <br/>{props.owner.owner1.address2}
                   <br/><b>Ph.# </b> {props.owner.owner1.phone}
                   <br/><b>Email: </b>
-                  <a href={`mailto:${props.owner.owner1.email}?Subject=Dil%20Shaan`} target="_top">{props.owner.owner1.email}</a>
+                  <a href={`mailto:${props.owner.owner1.email}?Subject=Dilshaan`} target="_top">{props.owner.owner1.email}</a>
                   <br/>
               </Typography>
             </CardContent>

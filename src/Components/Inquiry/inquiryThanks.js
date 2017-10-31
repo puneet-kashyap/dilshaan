@@ -11,14 +11,14 @@ const InquiryThanks = () => {
           Thank You.
         </Typography>
       <p className="text-left">
-        One of the Dil Shaan's event manager will get in touch with your shortly.
+        One of the Dilshaan's event manager will get in touch with your shortly.
       </p>
       <p className="text-left">
         I appreciate your interest in booking my show in your city.
       </p>
       <Typography type="display3" align='right' component="h1" color="primary"
         style={{'padding':'10px', 'fontFamily':'Ruthie'}}>
-        Dil Shaan.
+        Dilshaan.
       </Typography>
     </Paper>
   </div>

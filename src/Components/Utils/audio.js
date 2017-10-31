@@ -20,10 +20,8 @@ class AudioPlayer extends Component {
   playMusic = () => {
     this.setState({playing:!this.state.playing})
     if (!this.state.playing){
-      console.log('Music Playing');
       this.state.audio.play();
     }else {
-      console.log('Music Paused');
       this.state.audio.pause();
     }
 
@@ -42,7 +40,7 @@ class AudioPlayer extends Component {
           <CardContent>
             <Typography type="display1" color="primary">Pyar</Typography>
             <Typography type="headline" >
-              by Dil Shaan.
+              by Dilshaan.
             </Typography>
           </CardContent>
           <div style={{'display':'flex','alignItems':'center'}}>
