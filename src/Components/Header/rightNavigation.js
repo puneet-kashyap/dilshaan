@@ -1,7 +1,7 @@
 import React from 'react';
-import IconButton from 'material-ui/IconButton';
 import Menu, { MenuItem } from 'material-ui/Menu';
 import MoreVertIcon from 'material-ui-icons/MoreVert';
+import Button from 'material-ui/Button';
 
 const options = [
   'Home',
@@ -32,14 +32,16 @@ class RightNavigation extends React.Component {
   render() {
     return (
       <div>
-        <IconButton color="inherit"
+        <Button color="inherit"
+          style={{'opacity':0.7}}
           aria-label="More"
           aria-owns={this.state.open ? 'long-menu' : null}
           aria-haspopup="true"
           onClick={this.handleClick}
         >
+          Menu
           <MoreVertIcon />
-        </IconButton>
+        </Button>
         <Menu
           id="long-menu"
           anchorEl={this.state.anchorEl}
@@ -53,7 +55,7 @@ class RightNavigation extends React.Component {
           }}
         >
           {options.map(option => (
-            <MenuItem style={{'fontSize':'15px','font-weight':'500px'}} key={option} onClick={this.selectLink}>
+            <MenuItem style={{'fontSize':'15px'}} key={option} onClick={this.selectLink}>
               <a href={`/${option}`} style={{'color':'#3f51b5','font-weight':'500'}} >
                 {option.toUpperCase()}
               </a>
