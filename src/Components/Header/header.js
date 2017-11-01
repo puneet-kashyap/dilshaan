@@ -34,7 +34,7 @@ class Header extends React.Component {
   return (
     <div >
       <AppBar position="static">
-        <Toolbar>
+        <Toolbar  style={{'paddingRight':'0px'}}>
           <a href="/">
             <img src={require('../../Images/logo1.png')} className="img-responsive" style={{'padding':'10px'}} alt="Andy Nagpal Realtor" />
           </a>
@@ -43,9 +43,9 @@ class Header extends React.Component {
               <Tabs centered>
                   <Tab icon={<Home />} label="Home" href="/" />
                   <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
-                  <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-                  <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
                   <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
+                  <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+                  <Tab icon={<Album />} label="Bookings" href="/Bookings" />
               </Tabs>
             </Hidden>
           </Typography>
@@ -54,12 +54,13 @@ class Header extends React.Component {
           </Typography>
         </Toolbar>
         <Hidden mdUp >
-          <Tabs scrollable fullWidth>
-              <Tab icon={<Home />} label="Home" href="/" />
-              <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
-              <Tab icon={<Album />} label="Bookings" href="/Bookings" />
-              <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
-              <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
+          <Tabs indicatorColor="accent"
+          textColor="inherit" scrollable fullWidth>
+            <Tab icon={<Home />} label="Home" href="/" />
+            <Tab icon={<Slideshow />} label="Albums" href="/Albums" />
+            <Tab icon={<LibraryMusic />} label="Gallery" href="/Gallery"/>
+            <Tab icon={<PersonPinIcon />} label="Contact Me" href="/Contact"/>
+            <Tab icon={<Album />} label="Bookings" href="/Bookings" />
           </Tabs>
         </Hidden>
       </AppBar>
