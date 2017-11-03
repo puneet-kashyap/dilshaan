@@ -3,6 +3,8 @@ import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import PyarAlbum from './PyarAlbum';
 
+import './albums.css'
+
 class Albums extends Component {
   constructor(props){
     super(props);
@@ -23,8 +25,10 @@ class Albums extends Component {
     return (
       <div>
         <Header />
-        <div className="col-md-6 text-center" style={{'padding':'15px'}}>
-          <PyarAlbum />
+        <div className="AppCenter">
+          <div className="col-md-6 text-center" style={{'padding':'15px'}}>
+            <PyarAlbum />
+          </div>
         </div>
         <Footer />
       </div>
