@@ -4,6 +4,9 @@ import Footer from '../Footer/footer';
 import Typography from 'material-ui/Typography';
 import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
 import { connect } from 'react-redux';
+import Hidden from 'material-ui/Hidden';
+
+import Facebook from '../Utils/facebook';
 
 const Contact = (props) => {
   return (
@@ -34,6 +37,13 @@ const Contact = (props) => {
             </CardContent>
           </Card>
       </div>
+      <Hidden mdUp>
+      <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
+        <Card raised style={{'padding':'25px'}}>
+        <Facebook />
+        </Card>
+      </div>
+      </Hidden>
       <Card raised>
         <CardMedia
           style={{'padding':'10px','minHeight':'500px'}}
