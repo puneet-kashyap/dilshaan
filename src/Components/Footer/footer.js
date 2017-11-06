@@ -3,7 +3,6 @@ import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
 import Grid from 'material-ui/Grid'
-import Hidden from 'material-ui/Hidden';
 import { connect } from 'react-redux';
 
 const Footer = (props) => {
@@ -11,7 +10,8 @@ const Footer = (props) => {
     <div >
       <AppBar position="static">
         <Toolbar>
-          <Grid container justify="space-between" spacing={24} style={{ margin: 5 }}>
+          <Grid container justify="space-around" alignItems="center" spacing={24} style={{ margin: 5 }}>
+
             <Grid item xs={12} sm={4}>
               <Typography align='center' type="display1"  color="inherit" style={{ 'padding': '8px' }}>
                 {props.owner.owner1.name}
@@ -26,17 +26,16 @@ const Footer = (props) => {
                   </a>
               </Typography>
             </Grid>
-            <Hidden lgDown>
-            <Grid item xs={12} sm={4}>
+
+            <Grid item xs={12} sm={4} >
               <Typography align='center' type="display1"  color="inherit" >
-                {props.owner.owner2.name}
-              </Typography>
-              <Typography align='center' type="headline"  color="inherit" >
-                {props.owner.owner2.phone} <br/>
-                sippi@dilshaan.com
+                <div className="fb-like"
+                  data-href="https://www.facebook.com/officialdilshaan"
+                  data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true">
+                </div>
               </Typography>
             </Grid>
-            </Hidden>
+
             <Grid item xs={12} sm={4}>
               <Typography align='center' type="display1"  color="inherit" style={{ 'padding': '8px' }}>
                 {props.owner.owner2.name}
@@ -51,6 +50,7 @@ const Footer = (props) => {
                   </a>
               </Typography>
             </Grid>
+            
           </Grid>
         </Toolbar>
       </AppBar>
