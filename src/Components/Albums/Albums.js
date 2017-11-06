@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import Header from '../Header/header';
 import Footer from '../Footer/footer';
 import PyarAlbum from './PyarAlbum';
-
 import './albums.css'
 
 class Albums extends Component {
