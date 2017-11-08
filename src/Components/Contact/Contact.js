@@ -29,7 +29,7 @@ const Contact = (props) => {
               <Typography type="display1" component="h4" color="secondary">
                   {props.owner.owner1.address1}
                   <br/>{props.owner.owner1.address2}
-                  <br/><b>Ph.# </b> {props.owner.owner1.phone}
+                  <br/><b>Ph.# </b><a href="tel:+917696571231">{props.owner.owner1.phone}</a>
                   <br/><b>Email: </b>
                   <a href={`mailto:${props.owner.owner1.email}?Subject=Dilshaan`} target="_top">{props.owner.owner1.email}</a>
                   <br/>
