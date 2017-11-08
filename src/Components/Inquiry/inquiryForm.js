@@ -5,6 +5,7 @@ import Button from 'material-ui/Button';
 import Typography from 'material-ui/Typography';
 
 import InquiryThanks from './inquiryThanks';
+import { writeInquiryData } from '../../fire';
 
 class InquiryForm extends Component {
   constructor(props){
@@ -21,6 +22,7 @@ class InquiryForm extends Component {
   submit = () => {
     this.setState({form:'filled'})
     console.log(this.state);
+    writeInquiryData(this.state);
   }
   render () {
     if (this.state.form === 'blank') {
