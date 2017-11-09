@@ -10,7 +10,7 @@ export const fire = firebase.initializeApp(config);
 const fireDB = firebase.database();
 
 export const writeInquiryData = (form) => {
-  fireDB.ref('Inquiry/' + form.name).set({
+  fireDB.ref('Inquiry/' + form.Name).set({
     name: form.Name,
     phone: form.Phone,
     email: form.Email,
