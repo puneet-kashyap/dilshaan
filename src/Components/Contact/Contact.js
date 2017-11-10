@@ -5,8 +5,10 @@ import Typography from 'material-ui/Typography';
 import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
 import { connect } from 'react-redux';
 import Hidden from 'material-ui/Hidden';
+import ReactBotUI from 'react-bot-ui';
 
 import Facebook from '../Utils/facebook';
+import './contact.css';
 
 const Contact = (props) => {
   return (
@@ -37,6 +39,17 @@ const Contact = (props) => {
             </CardContent>
           </Card>
       </div>
+      <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
+        <Card raised className="img-responsive" style={{'height':450}}>
+          <ReactBotUI
+            title={'Chat with us.'}
+            dialogflow={{accessToken: process.env.REACT_APP_BOT_ID}}
+            dialogHeightMax={350}
+            isVisible={true}
+            isUserHidden={true}
+          />
+        </Card>
+      </div>
       <Hidden mdUp>
       <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
         <Card raised style={{'padding':'25px'}}>
@@ -56,6 +69,7 @@ const Contact = (props) => {
         />
       </Card>
       <Footer />
+
     </div>
   );
 }

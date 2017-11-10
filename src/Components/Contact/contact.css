@@ -1,0 +1,7 @@
+:root {
+  --primary-color: #4051b4;
+  --secondary-color: #9c27b0;
+}
+.container {
+  position: inherit;
+}
