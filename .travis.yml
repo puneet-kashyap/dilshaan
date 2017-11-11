@@ -12,7 +12,7 @@ before_script:
 script:
     - echo "Deploying !"
     - npm install
-    - npm run build
+    - REACT_APP_BOT_ID=$DILSHAAN_BOT_ID npm run build
 
 install:
     - npm install -g firebase-tools
