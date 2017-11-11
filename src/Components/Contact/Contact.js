@@ -46,7 +46,7 @@ const Contact = (props) => {
             dialogflow={{accessToken: process.env.REACT_APP_BOT_ID}}
             dialogHeightMax={350}
             isVisible={true}
-            isUserHidden={true}
+            isUserHidden={false}
           />
         </Card>
       </div>
