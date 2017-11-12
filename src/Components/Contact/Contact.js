@@ -39,15 +39,14 @@ const Contact = (props) => {
             </CardContent>
           </Card>
       </div>
-      <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
-        <Card raised style={{'height':450}}>
+      <div className="col-md-offset-3 col-md-6 text-center">
+        <Card raised style={{'padding':'10px'}}>
           <ReactBotUI
             title={'Chat with us.'}
             dialogflow={{accessToken: process.env.REACT_APP_BOT_ID}}
             dialogHeightMax={350}
             isVisible={true}
             isUserHidden={false}
-            ref={el => this.chat = el}
           />
         </Card>
       </div>
