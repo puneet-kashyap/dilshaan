@@ -20,7 +20,7 @@ const Home = () => {
           <Typography paragraph type="headline" style={{'padding':'0px 20px'}}>
             Music fascinated me from birth.
             Since the age of 3, I was very fond of Tabla and Harmonium.
-            Under the guidance of most reputed and classical singer Mr. Daler Ali ji, I have been singing from the age of 8 years.
+            Under the guidance of most reputed and classical singer Guru Daler Ali ji, I have been singing from the age of 8 years.
           </Typography>
           <Typography paragraph type="headline" style={{'padding':'0px 20px'}}>
             Music is in our genes as my father Ramesh K.
