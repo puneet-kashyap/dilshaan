@@ -28,7 +28,7 @@ const Home = () => {
             My father and brother Rajan Kumar, are the big force behind me to convert my passion into profession.
           </Typography>
           <Typography paragraph type="headline" style={{'padding':'0px 20px'}}>
-            I have done bachelor's & masters in Music, both vocal and instrumental.
+            I have done bachelor&#39;s & masters in Music, both vocal and instrumental.
             I also took part in many competition such as school competition, inter school competition, and many youth festivals in which I got huge appreciation along with many prizes.
           </Typography>
           <Typography paragraph type="headline" style={{'padding':'0px 20px'}}>
