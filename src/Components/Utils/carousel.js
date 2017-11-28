@@ -15,9 +15,9 @@ const sliderMobile = [
   require('../../Images/slider/Dilshaan11.jpg'),
   require('../../Images/slider/Dilshaan12.jpg'),
   require('../../Images/slider/Dilshaan13.jpg'),
-  // require('../../Images/slider/Dilshaan14.jpg'),
   require('../../Images/slider/Dilshaan21.jpg'),
-  require('../../Images/slider/Dilshaan2.jpg')
+  require('../../Images/slider/Dilshaan2.jpg'),
+  require('../../Images/slider/Dilshaan25.jpg')
 ]
 
 const Carousel = (props) => {
