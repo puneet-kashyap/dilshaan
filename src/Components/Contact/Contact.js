@@ -5,7 +5,7 @@ import Typography from 'material-ui/Typography';
 import Card, { CardMedia, CardHeader, CardContent } from 'material-ui/Card';
 import { connect } from 'react-redux';
 import Hidden from 'material-ui/Hidden';
-// import ReactBotUI from 'react-bot-ui';
+import ReactBotUI from 'react-bot-ui';
 
 import Facebook from '../Utils/facebook';
 import './contact.css';
@@ -39,7 +39,7 @@ const Contact = (props) => {
             </CardContent>
           </Card>
       </div>
-      {/* <div className="col-md-offset-3 col-md-6 text-center">
+      <div className="col-md-offset-3 col-md-6 text-center">
         <Card raised style={{'padding':'10px'}}>
           <ReactBotUI
             title={'Chat with us.'}
@@ -49,7 +49,7 @@ const Contact = (props) => {
             isUserHidden={false}
           />
         </Card>
-      </div> */}
+      </div>
       <Hidden mdUp>
       <div className="col-md-offset-3 col-md-6 text-center" style={{'padding':'25px'}}>
         <Card raised style={{'padding':'25px'}}>
