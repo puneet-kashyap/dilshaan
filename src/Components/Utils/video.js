@@ -1,17 +1,28 @@
 import React from 'react';
-import CardMedia from 'material-ui/Card';
+import Card , {CardMedia, CardHeader} from 'material-ui/Card';
+import Typography from 'material-ui/Typography';
 
 const Video = (props) => {
   return (
-    <CardMedia
-      component='video'
-      src={props.src}
-      title="Dilshaan video"
-      className="embed-responsive-item"
-      style={{'marginBottom':'10px'}}
-      type="video/mp4"
-      controls
-    />
+    <div className="col-md-4 text-center" style={{'padding':'15px'}}>
+      <Card raised>
+        <Typography type="display3" component="h1" color="primary" style={{'paddingTop':'25px'}}>
+          {props.title}
+        </Typography>
+        <CardHeader
+          subheader={props.subHeader}
+        />
+        <CardMedia
+          component='video'
+          src={props.src}
+          title="Dilshaan video"
+          className="embed-responsive-item"
+          style={{'margin':'10px', 'width':'350px', 'height':'300px'}}
+          type="video/mp4"
+          controls
+        />
+      </Card>
+    </div>
   )
 }
 
