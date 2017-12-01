@@ -17,7 +17,7 @@ const Video = (props) => {
           src={props.src}
           title="Dilshaan video"
           className="embed-responsive-item"
-          style={{'margin':'10px', 'width':'350px', 'height':'300px'}}
+          style={{'margin':'10px', 'width':'95%', 'height':'350px'}}
           type="video/mp4"
           controls
         />
