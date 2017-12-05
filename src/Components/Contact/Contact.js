@@ -26,7 +26,7 @@ const Contact = (props) => {
             />
             <img src={require('../../Images/profile/profile2.jpg')}
               className="img-responsive center-block"
-              style={{'height':window.innerHeight/2}}
+              style={{'maxHeight':window.innerHeight/2}}
               alt={props.owner.owner1.name}/>
             <CardContent>
               <Typography type="display1" component="h4" color="secondary">
